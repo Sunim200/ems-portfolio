@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+QLD+Beginner:wght@400;700&display=swap');
+
+:root {
+    --whiteColor: #f1efee;
+    --blackColor: #000000;
+    --backgroundColor: #5a5a5a;
+    --primaryColor: #637074;
+    --secondaryColor: #1e2024;
+    --accentColor: #7e918c;
+    --fontHeading: 'Edu QLD Beginner', cursive;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.o-wrapper {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100vh;
+}
+
+body {
+    background-color: var(--backgroundColor);
+}
+
+header {
+    background-color: var(--whiteColor);
+    padding: 2rem;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none
+}
+
+a {
+    text-decoration: none;
+    color: var(--blackColor);
+    font-size: .925rem;
+}
+
+/* section {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    background-color: #408c96;
+    padding: 10px;
+} */
+
+.grid__container {
+    width: 100%;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+    overflow: hidden;
+}
+
+
+.drid__container img {
+    width: 100%;
+}
+
+.section__hero {
+    width: 100%;
+    height: 94vh;
+    background: url(/img/emsImg/DSC01833.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    filter: blur(.35rem);
+}
+
+.hero__content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.content__top h1{
+    color: var(--whiteColor);
+    font-family: var(--fontHeading);
+    font-size: 3rem;
+}
+
+.content__button button {
+    color: var(--whiteColor);
+    padding: 1rem;
+    outline: none;
+    border: none;
+    border-radius: 1rem;
+    width: 150px;
+    background-color: var(--primaryColor);
+    margin: 1rem 1rem;
+}
+
+button:hover {
+    cursor: pointer;
+    background: none;
+    border: 1px solid var(--primaryColor);
+}
+
+@media  screen and (max-width: 400px) {
+    .content__button button {
+        display: flex;
+    }
+}
