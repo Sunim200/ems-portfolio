@@ -116,8 +116,59 @@ button:hover {
     border: 1px solid var(--primaryColor);
 }
 
+.card__container {
+    background-color: var(--whiteColor);
+    display: flex;
+    justify-content: space-around;
+    padding: 4rem 0;
+}
+
+.tunnelblick {
+    background: url(/img/emsImg/Emo823\ -\ 2020.jpg);
+}
+
+.papier {
+    background: url(/img/emsImg/EmoPapier2.jpg);
+}
+
+.card__item {
+    width: 250px;
+    height: 35vh;
+    padding: 2rem;
+    background-size: cover;
+    background-position: center;
+    border-radius: 1.5rem;
+    box-shadow: .5rem 5px 5px black;
+}
+
+
+.footer__container {
+    background-color:var(--secondaryColor);
+    padding: 2rem;
+}
+
+.footer__content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.footer__content a{
+    color: var(--whiteColor);
+}
+
 @media  screen and (max-width: 400px) {
     .content__button button {
         display: flex;
+    }
+
+    .card__container {
+        flex-direction: column;
+    }
+
+    .card__item {
+        width: 100%;
+        border-radius: 0;
+        margin-bottom: 1rem;
     }
 }
