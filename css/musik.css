@@ -118,9 +118,15 @@ button:hover {
 
 .card__container {
     background-color: var(--whiteColor);
+    padding: 4rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+.card__content {
+    width: 80%;
     display: flex;
     justify-content: space-around;
-    padding: 4rem 0;
 }
 
 .tunnelblick {
@@ -157,12 +163,17 @@ button:hover {
     color: var(--whiteColor);
 }
 
+.a:hover {
+    cursor: pointer;
+}
+
 @media  screen and (max-width: 400px) {
     .content__button button {
         display: flex;
     }
 
-    .card__container {
+    .card__content {
+        width: 100%;
         flex-direction: column;
     }
 
